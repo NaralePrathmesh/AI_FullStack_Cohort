@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            float: left;
+        }
+
+        .navbar {
+            height: 100px;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+            float: left;
+            background-color: azure;
+        }
+
+        .navbar1 {
+            height: 100%;
+            width: 30%;
+            float: left;
+        }
+
+        .navbar2 {
+            height: 100%;
+            width: 50%;
+            float: left;
+        }
+
+        .navbar3 {
+            height: 100%;
+            width: 20%;
+            float: left;
+        }
+
+
+        .navbar1 h1 {
+            font-size: 40px;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .navbar1 span {
+            font-size: 30px;
+            font-weight: lighter;
+        }
+
+        .navbar2 ul li {
+            font-size: 20px;
+            display: inline-block;
+            margin-left: 55px;
+            margin-top: 30px;
+        }
+
+        .navbar2 a {
+            color: rgb(142, 139, 139);
+            text-decoration: none;
+        }
+
+        .navbar3 i {
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+
+
+        .navbar3 button {
+            height: 40px;
+            width: 160px;
+            color: white;
+            margin-left: 40px;
+            border: none;
+            border-radius: 100px;
+            background-color: rgb(157, 124, 80);
+        }
+
+        .container1 {
+            height: 700px;
+            width: 100%;
+            float: left;
+        }
+
+        .blur_back {
+            height: 100%;
+            width: 100%;
+            float: left;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .img {
+            height: 100%;
+            width: 100%;
+            float: left;
+            background: url(../assets/task12_1.jpg) no-repeat center center/cover;
+        }
+
+        .main_btn {
+            height: 40px;
+            width: 160px;
+            color: white;
+            border: 2px solid whitesmoke;
+            border-radius: 100px;
+            background-color: transparent;
+            position: absolute;
+            left: 70px;
+            top: 120px;
+        }
+
+        .blur_back h1 {
+            position: absolute;
+            color: white;
+            font-size: 70px;
+            left: 80px;
+            top: 170px;
+        }
+
+        .blur_back p {
+            color: white;
+            position: absolute;
+            left: 70px;
+            top: 420px;
+            font-size: 25px;
+        }
+
+        .btn1 {
+            height: 40px;
+            width: 160px;
+            color: black;
+            font-weight: bold;
+            border: 2px none;
+            border-radius: 100px;
+            position: absolute;
+            top: 540px;
+            left: 60px;
+            background-color: rgb(242, 242, 142);
+        }
+
+        .btn2 {
+            height: 40px;
+            width: 160px;
+            color: white;
+            font-weight: bold;
+            border: 2px solid whitesmoke;
+            border-radius: 100px;
+            position: absolute;
+            top: 540px;
+            left: 230px;
+            background-color: transparent;
+        }
+
+        .btn3 {
+            height: 40px;
+            width: 160px;
+            font-weight: bold;
+            color: white;
+            border: 2px solid whitesmoke;
+            border-radius: 100px;
+            position: absolute;
+            top: 540px;
+            left: 400px;
+            background-color: transparent;
+        }
+
+        .btn4 {
+            height: 40px;
+            width: 160px;
+            font-weight: bold;
+            color: white;
+            border: 2px solid whitesmoke;
+            border-radius: 100px;
+            position: absolute;
+            top: 540px;
+            left: 570px;
+            background-color: transparent;
+        }
+
+        .btn5 {
+            height: 40px;
+            width: 160px;
+            font-weight: bold;
+            color: white;
+            border: none;
+            border-radius: 100px;
+            position: absolute;
+            top: 640px;
+            left: 60px;
+            background-color: rgb(237, 186, 0);
+        }
+
+        .btn6 {
+            height: 40px;
+            width: 160px;
+            font-weight: bold;
+            color: white;
+            border: 2px solid whitesmoke;
+            border-radius: 100px;
+            position: absolute;
+            top: 640px;
+            left: 230px;
+            background-color: transparent;
+        }
+
+
+        .container2 {
+            height: 1000px;
+            width: 100%;
+            float: left;
+            background-color: azure;
+        }
+
+        .btn7{
+            height: 40px;
+            width: 150px;
+            margin-top: 30px;
+            border: none;
+            color: brown;
+            background-color: pink;
+            font-weight: bold;
+            border-radius: 100px;
+            margin-left: 700px;
+        }
+
+
+        .heading{
+            text-align: center;
+            margin-top: 20px;
+            font-size: 50px;
+        }
+
+        .para{
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        .card1{
+            height: 170px;
+            width: 800px;
+            float: left;
+            position: relative;
+            top: 20px;
+            left: 360px;
+        }
+
+
+        .num1{
+            height: 35px;
+            padding: 4px;
+            color: white;
+            width: 35px;
+            font-size: 25px;
+            background-color: brown;
+            border-radius: 100px;
+            position: absolute;
+            top: 60px;
+            left: 50px;
+        }
+
+        .text1{
+            position: absolute;
+            top: 20px;
+            left: 620px;
+        }
+
+        .para1{
+            position: absolute;
+            top: 60px;
+            left: 470px;
+        }
+
+
+        .card2{
+            height: 170px;
+            width: 800px;
+            float: left;
+            position: relative;
+            top: 20px;
+            left: 360px;
+        }
+
+        .num2{
+            height: 35px;
+            padding: 4px;
+            color: white;
+            width: 35px;
+            font-size: 25px;
+            background-color: brown;
+            border-radius: 100px;
+            position: absolute;
+            top: 20px;
+            left: 620px;
+        }
+
+        .text2{
+            position: absolute;
+            top: 10px;
+            left: 50px;
+        }
+
+        .para2{
+            position: absolute;
+            top: 60px;
+            left: 50px;
+        }
+
+
+
+        .card3{
+            height: 170px;
+            width: 800px;
+            float: left;
+            position: relative;
+            top: 20px;
+            left: 360px;
+        }
+
+
+        .num3{
+            height: 35px;
+            padding: 4px;
+            color: white;
+            width: 35px;
+            font-size: 25px;
+            background-color: brown;
+            border-radius: 100px;
+            position: absolute;
+            top: 60px;
+            left: 50px;
+        }
+
+        .text3{
+            position: absolute;
+            top: 20px;
+            left: 620px;
+        }
+
+        .para3{
+            position: absolute;
+            top: 60px;
+            left: 470px;
+        }
+
+
+
+        .card4{
+            height: 170px;
+            width: 800px;
+            float: left;
+            position: relative;
+            top: 20px;
+            left: 360px;
+        }
+
+        .num4{
+            height: 35px;
+            padding: 4px;
+            color: white;
+            width: 35px;
+            font-size: 25px;
+            background-color: brown;
+            border-radius: 100px;
+            position: absolute;
+            top: 20px;
+            left: 620px;
+        }
+
+        .text4{
+            position: absolute;
+            top: 10px;
+            left: 50px;
+        }
+
+        .para4{
+            position: absolute;
+            top: 60px;
+            left: 50px;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <nav class="navbar">
+            <div class="navbar1">
+                <h1>Atelier <span>STUDIO</span></h1>
+            </div>
+            <div class="navbar2">
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Portfolio</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar3">
+                <i class="fa-regular fa-moon"></i>
+                <button>Book Consultation</button>
+            </div>
+        </nav>
+
+
+        <section class="container1">
+            <div class="img">
+                <div class="blur_back">
+                    <button class="main_btn">47 Projects Completed</button>
+                    <h1>Transforming spaces <br> Into Extraordinary <br> Experiences</h1>
+                    <p>Award-winning interior design studio crafting timeless, <br> sophisticated environments for
+                        discerning clients across <br> residential, commercial, and hospitality sectors.</p>
+
+                    <button class="btn1">Residential (18)</button>
+                    <button class="btn2">Commercial (12)</button>
+                    <button class="btn3"> Hospitality (9)</button>
+                    <button class="btn4">Retail (8)</button>
+                    <button class="btn5">View Portfolio</button>
+                    <button class="btn6">Book Consultation</button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container2">
+                <button class="btn7">Our Process</button>
+                <h1 class="heading">How We Work</h1>
+                <p class="para">Acellaborative four-step journey from initial to final reveal, ensuring every detail <br> reflects your unique story,</p>
+
+                <div class="card1">
+                    <h1 class="num1">01</h1>
+                    <h1 class="text1">Consult</h1>
+                    <p class="para1">We begin with an in-depth conversation to <br> understand your vision afestyle and goals. <br> This discovery phase shapes emily decision</p>
+                </div>
+
+                <div class="card2">
+                    <h1 class="num2">02</h1>
+                    <h1 class="text2">Design</h1>
+                    <p class="para2">Our team develops detailed concept boards, floor <br> plans, 3D renderings, and material palettes that <br> bring your vision to life before any work begins</p>
+                </div>
+
+                <div class="card3">
+                    <h1 class="num3">03</h1>
+                    <h1 class="text3">Refine</h1>
+                    <p class="para3">Through iterative reviews and collaborative <br> feedback sessions, we fine-tune every element <br> until the design perfectly captures your aesthetic.</p>
+                </div>
+
+                <div class="card4">
+                    <h1 class="num4">04</h1>
+                    <h1 class="text4">Execute</h1>
+                    <p class="para4">We manage the entire implementation process, <br> coordinating with artisans, contractors, and <br> suppliers to deliver a flawless final result</p>
+                </div>
+        </section>
+    </main>
+</body>
+
+</html>

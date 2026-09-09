@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+        // factorial
+        let n = 5;
+        let fact = 1;
+        let i = 1;
+
+        do {
+            fact = fact * i;
+            i++;
+        } while (i <= n);
+
+        console.log("Factorial =", fact);
+
+
+
+        // prime
+        let num = 7;
+        let x = 2;
+        let isPrime = true;
+
+        while (x < num) {
+            if (num % x === 0) {
+                isPrime = false;
+                break;
+            }
+            x++;
+        }
+
+        if (isPrime && num > 1) {
+            console.log(num + " is a Prime Number");
+        } else {
+            console.log(num + " is Not a Prime Number");
+        }
+
+    </script>
+
+
+</body>
+
+</html>

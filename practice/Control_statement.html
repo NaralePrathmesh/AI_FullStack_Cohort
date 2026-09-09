@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+    <script>
+        let shopp_amt=Number(prompt("Enter Shopping Amount"));
+        let disc=0;
+
+        if(shopp_amt >=20000)
+        {
+            let disc=20;
+            disc=shopp_amt*disc/100;
+            alert("Your discount is"+ (disc));
+        }
+        else if(shopp_amt >=30000)
+        {
+            let disc=30;
+            disc=shopp_amt*disc/100;
+            alert("Your discount is"+ (disc));
+        }
+        else if(shopp_amt >=50000)
+        {
+            let disc=40;
+            disc=shopp_amt*disc/100;
+            alert("Your discount is"+ (disc));
+        }
+        else{
+            alert("0% discount");
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>

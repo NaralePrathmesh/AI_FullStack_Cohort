@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        let num1=Number(prompt("Enter first number"));
+        let num2=Number(prompt("Enter second number"));
+        let operation=prompt("Enter which operation you have to perform");
+
+        switch(operation)
+        {
+            case "+":alert(`Addition of : ${num1} + ${num2}  = ${num1+num2}`);
+                break;
+
+            case "-":alert(`Subtraction of : ${num1} - ${num2}  = ${num1-num2}`);
+                break;
+
+            case "*":alert(`Multiplication of : ${num1} * ${num2}  = ${num1*num2}`);
+                break;
+
+            case "/":alert(`Division of : ${num1} / ${num2}  = ${num1/num2}`);
+                break;
+
+            default:alert("Enter valid operation");
+
+        }
+    </script>
+
+
+</body>
+</html>

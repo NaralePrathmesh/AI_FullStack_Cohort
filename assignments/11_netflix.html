@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 729px;
+            width: 100%;
+            background: url(../assets/netflix1.jpg);
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        .container1 {
+            height: 729px;
+            width: 100%;
+            float: left;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .header {
+            height: 80px;
+            width: 50%;
+            float: left;
+        }
+
+        .netflix_img {
+            height: 50%;
+            width: 50%;
+            margin-top: 20px;
+        }
+
+        .button1 {
+            height: 30px;
+            width: 100px;
+            background-color: transparent;
+            border: 2px solid white;
+            border-radius: 5px;
+            color: white;
+            margin-top: 20px;
+            margin-left: 270px;
+        }
+
+        .button2 {
+            height: 30px;
+            width: 100px;
+            background-color: rgb(231, 17, 17);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .text {
+            height: 400px;
+            width: 550px;
+            float: left;
+            margin-left: 450px;
+            margin-top: 100px;
+            padding: 20px;
+        }
+
+        .text h1 {
+            color: white;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .text h3 {
+            color: white;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .text input {
+            height: 40px;
+            width: 160px;
+            color: antiquewhite;
+            background-color: transparent;
+            border: 2px solid gainsboro;
+            border-radius: 5px;
+            margin-left: 100px;
+            margin-top: 40px;
+        }
+
+        .text button {
+            height: 40px;
+            width: 160px;
+            background-color: rgb(236, 21, 21);
+            border: none;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .container2 {
+            height: 729px;
+            width: 100%;
+            float: left;
+            background-color: black;
+        }
+
+        .box1 {
+            height: 50%;
+            width: 100%;
+            float: left;
+        }
+
+        .box1 h2 {
+            color: white;
+            margin-left: 50px;
+            padding: 15px;
+        }
+
+        .box1 img {
+            height: 300px;
+            width: 16%;
+            margin-left: 3%;
+            float: left;
+        }
+
+        .box2 {
+            height: 50%;
+            width: 100%;
+            float: left;
+            margin-bottom: 30px;
+        }
+
+        .box2 h2 {
+            margin-top: 10px;
+            color: white;
+            margin-left: 50px;
+            padding: 15px;
+        }
+
+        .box2 div {
+            height: 290px;
+            width: 20%;
+            margin-left: 4%;
+            float: left;
+            background-color: #513ba0;
+            border-radius: 10px;
+        }
+
+        .box2 div h2 {
+            color: white;
+            margin-left: 1px;
+        }
+
+        .box2 div p {
+            color: rgb(233, 233, 233);
+            margin-left: 15px;
+        }
+
+        .container3 {
+            height: 800px;
+            width: 100%;
+            float: left;
+            background-color: rgb(0, 0, 0);
+        }
+
+        .container3 div {
+            height: 80px;
+            width: 80%;
+            background-color: #2D2D2D;
+            margin-top: 15px;
+            margin-left: 150px;
+            color: white;
+            font-size: 25px;
+            padding-left: 20px;
+            padding-top: 12px;
+        }
+
+        .container3 h2 {
+            margin-top: 10px;
+            color: white;
+            margin-left: 50px;
+            padding: 15px;
+        }
+
+        .container3 h3 {
+            margin-top: 10px;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .container3 input{
+            height: 50px;
+            width: 390px;
+            color: antiquewhite;
+            border: 2px solid gainsboro;
+            background-color: transparent;
+            border-radius: 5px;
+            margin-left:430px;
+            margin-top: 40px;
+        }
+
+        .container3 button{
+            height: 50px;
+            width: 260px;
+            background-color: rgb(236, 21, 21);
+            border: none;
+            border-radius: 5px;
+            color: white;
+        }
+
+        .container4{
+            height: 800px;
+            width: 100%;
+            float: left;
+            background-color: rgb(0, 0, 0);
+            padding-top: 30px;
+        }
+
+        .container4 p{
+            color: white;
+            text-align: center;
+        }
+
+        .container4 h3{
+            color: white;
+            margin-top: 50px;
+            margin-left: 180px;
+        }
+
+        .lists{
+            height: 300px;
+            width: 80%;
+            margin-top: 40px;
+            margin-left: 90px;
+            float: left;
+        }
+
+        .container4 ul{
+            height: 300px;
+            width: 25%;
+            float: left;
+            padding: 60px;
+            font-size: 17px;
+        }
+
+        .container4 li{
+            margin-top: 16px;
+            color: white;
+            list-style-type: none;
+        }
+
+        .container4 button{
+            height: 40px;
+            width: 150px;
+            margin-left: 140px;
+            background-color: transparent;
+            border: 2px solid white;
+            border-radius: 5px ;
+            color: white;
+        }
+
+        .container4 h4{
+            margin-top: 30px;
+            margin-left: 140px;
+            color: white;
+        }
+
+        .container4 p{
+            margin-top: 40px;
+            margin-left: 140px;
+            text-align: left;
+        }
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <main class="container">
+
+
+        <section class="container1">
+            <div class="header">
+                <img class="netflix_img" src="../assets/netflix2.svg" alt="">
+            </div>
+            <div class="header">
+                <button class="button1">English</button>
+                <button class="button2">Sign In</button>
+            </div>
+
+            <div class="text">
+                <h1>Unlimited movies, shows, <br> and more</h1>
+                <h3>Plans start at ₹149. Cancel anytime.</h3>
+                <h3>Ready to watch? Enter your email to start your <br> membership.</h3>
+                <input type="text" name="" id="" placeholder="Email address">
+                <button>Try & Days for ₹0</button>
+            </div>
+        </section>
+
+
+        <section class="container2">
+            <div class="box1">
+                <h2>Trending Now</h2>
+                <div>
+                    <img src="../assets/netflix3.jpg" alt="">
+                </div>
+                <div>
+                    <img src="../assets/netflix4.jpg" alt="">
+                </div>
+                <div>
+                    <img src="../assets/netflix5.jpg" alt="">
+                </div>
+                <div>
+                    <img src="../assets/netflix6.jpg" alt="">
+                </div>
+                <div>
+                    <img src="../assets/netflix7.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="box2">
+                <h2>More reasons to join</h2>
+                <div>
+                    <h2>Enjoy on your TV</h2>
+                    <p>Watch on smart TVs, PlayStation, <br> Xbox, Chromecast, Apple TV, Blu- <br>ray players and more.
+                    </p>
+                </div>
+
+                <div>
+                    <h2>Download your shows <br> to watch offline</h2>
+                    <p>Save your favourites easily and <br> always have something to watch.</p>
+                </div>
+
+                <div>
+                    <h2>Watch everywhere</h2>
+                    <p>Stream unlimited movies and TV <br> shows on your phone, tablet, <br> laptop, and TV.</p>
+                </div>
+
+                <div>
+                    <h2>Create profiles for kids</h2>
+                    <p>Send kids on adventures with their <br> favourite characters in a space <br> made just for them —
+                        free with your <br> membership.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="container3">
+            <h2>Frequently Asked Questions</h2>
+            <div>What is Netflix ?</div>
+            <div>How Much Does Netflix Cost ?</div>
+            <div>Where I Can Watch ?</div>
+            <div>How Do I Cancel ?</div>
+            <div>What I Can Watch On Netflix ?</div>
+            <div> Is Netflix Good For Kids ?</div>
+            <h3>Ready to watch? Enter your email to start your membership.</h3>
+            <input type="text" name="" id="" placeholder="Email address">
+            <button>Try & Days for ₹0</button>
+        </section>
+
+
+        <section class="container4">
+            <p> <b>This offer is only valid for new members. This offer is non-transferrable. You agree that Netflix will charge the membership fee at the end of the free trial to your payment <br> method and will automatically continue your membership until you cancel. Some methods of payment may not be eligible to redeem this offer.</b></p>
+            <h3>Questions? Call 000-800-919-1743</h3>
+            <div class="lists">
+                <div><ul><a href=""><li>FAQ</li><li>Investor Relations</li><li>Privacy</li><li>Speed Test</li></a></ul></div>
+                <div><ul><a href=""><li>Help Centre</li><li>Jobs</li><li>Cookie Preferences</li><li>Legal Notices</li></ul></div>
+                <div><ul><a href=""><li>Account</li><li>Way to Watch</li><li>Corporate Information</li><li>Only On Netflix</li></ul></div>
+                <div><ul><a href=""><li>Media Centre</li><li>Term of Use</li><li>Contact Us</li></ul></div>
+            </div>
+            <button>English</button>
+            <h4>Netflix India</h4>
+            <p>This page is protected by Google reCAPTCHA to ensure you're not a bot.</p>
+        </section>
+
+
+    </main>
+</body>
+
+</html>

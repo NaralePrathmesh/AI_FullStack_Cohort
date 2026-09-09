@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main_section{
+            height: 100vh;
+            width: 100%;
+            background-color: aqua;
+        }
+
+        .header{
+            height: 90px;
+            width: 100%;
+            background-color: aliceblue;
+            display: flex;
+
+        }
+
+        .logo{
+            height: 100%;
+            width: 8%;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+        }
+
+        
+
+        .lists{
+            height: 100%;
+            width: 42%;
+            background-color: blueviolet;
+            display: flex;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .lists ul {
+            list-style-type: none;
+            display: flex;
+            gap: 50px;
+            font-size: 20px;
+        }
+
+        .search{
+            height: 100%;
+            width: 30%;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .search input{
+            height: 40px;
+            width: 350px;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .symbol{
+            height: 100%;
+            width: 30%;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            justify-content: center;
+        }
+
+        .symbol ul {
+            list-style-type: none;
+            display: flex;
+            gap: 50px;
+            font-size: 20px;
+        }
+
+        .hero_section{
+            height: 400px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 40px;
+            padding: 30px;
+        }
+
+        .hero_section div{
+            background-color: brown;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <main class="main_section">
+        <header class="header">
+            <div class="logo">
+                <img src="../assets/myntra_logo.png" alt="">
+            </div>
+
+            <div class="lists">
+                <ul>
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>Kids</li>
+                    <li>Home</li>
+                    <li>Beauty</li>
+                    <li>Genz</li>
+            </ul>
+            </div>
+
+            <div class="search">
+                <input type="search" placeholder="search for product & more">
+            </div>
+
+            <div class="symbol">
+                <ul>
+                    <li>Profile</li>
+                    <li>Wishlist</li>
+                    <li>Bag</li>
+                </ul>
+            </div>
+        </header>
+
+
+
+        <section class="hero_section">
+                <div>
+                    <img src="../assets/myntra1.png" alt="">
+                </div>
+                <div>
+                    <img src="../assets/myntra2.png" alt="">
+                </div>
+                <div>
+                    <img src="../assets/myntra3.png" alt="">
+                </div>
+                <div>
+                    <img src="../assets/myntra4.png" alt="">
+                </div>
+                <div>
+                    <img src="../assets/myntra5.png" alt="">
+                </div>
+        </section>
+
+
+
+    </main>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 20px;
+
+        }
+
+        .section1,
+        .section2,
+        .section3 {
+            height: 300px;
+            width: 25%;
+        }
+
+        .section1 {
+            background-color: rgb(14, 14, 202);
+            /*flex-grow: 3;*/
+            order: 3;
+
+
+        }
+
+        .section2 {
+            background-color: rgb(255, 0, 183);
+            order: 1;
+
+        }
+
+        .section3 {
+            background-color: rgb(255, 102, 0);
+            /*align-self: flex-start;*/
+            order: 2;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="section1"></div>
+        <div class="section2"></div>
+        <div class="section3"></div>
+    </div>
+</body>
+
+</html>

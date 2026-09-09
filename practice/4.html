@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="mr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>कृष्ण Cosmic Animation</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow: hidden;
+            background: #05020d;
+            font-family: "Noto Sans Devanagari", "Mangal", Arial, sans-serif;
+        }
+
+        /* MAIN SCENE */
+
+        .scene {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+
+            background:
+                radial-gradient(
+                    circle at 50% 50%,
+                    rgba(110, 50, 160, 0.18),
+                    transparent 45%
+                ),
+                radial-gradient(
+                    circle at 20% 20%,
+                    rgba(70, 30, 120, 0.12),
+                    transparent 40%
+                ),
+                #05020d;
+        }
+
+        /* NEBULA */
+
+        .nebula {
+            position: absolute;
+
+            width: 120%;
+            height: 120%;
+
+            top: -10%;
+            left: -10%;
+
+            background:
+                radial-gradient(
+                    ellipse at center,
+                    rgba(150, 80, 220, 0.12),
+                    transparent 50%
+                ),
+                radial-gradient(
+                    ellipse at 70% 30%,
+                    rgba(255, 180, 100, 0.08),
+                    transparent 40%
+                );
+
+            filter: blur(70px);
+
+            animation:
+                nebulaMove 40s ease-in-out infinite alternate;
+        }
+
+        @keyframes nebulaMove {
+
+            0% {
+                transform:
+                    scale(1)
+                    translate(0, 0);
+            }
+
+            50% {
+                transform:
+                    scale(1.08)
+                    translate(-2%, 2%);
+            }
+
+            100% {
+                transform:
+                    scale(1.15)
+                    translate(2%, -2%);
+            }
+        }
+
+        /* COSMIC FOG */
+
+        .fog {
+            position: absolute;
+
+            width: 200%;
+            height: 200%;
+
+            top: -50%;
+            left: -50%;
+
+            background:
+                radial-gradient(
+                    circle,
+                    rgba(255, 255, 255, 0.015),
+                    transparent 60%
+                );
+
+            filter: blur(100px);
+
+            animation:
+                fogMove 80s linear infinite;
+        }
+
+        @keyframes fogMove {
+
+            from {
+                transform:
+                    translate(-10%, -10%)
+                    rotate(0deg);
+            }
+
+            to {
+                transform:
+                    translate(-5%, -5%)
+                    rotate(360deg);
+            }
+        }
+
+        /* STARS */
+
+        .star {
+            position: absolute;
+
+            background: white;
+
+            border-radius: 50%;
+
+            box-shadow:
+                0 0 4px rgba(255, 255, 255, 0.8),
+                0 0 8px rgba(255, 255, 255, 0.4);
+
+            animation:
+                starTwinkle ease-in-out infinite;
+        }
+
+        @keyframes starTwinkle {
+
+            0%,
+            100% {
+                opacity: 0.2;
+                transform: scale(0.8);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1.4);
+            }
+        }
+
+        /* GOLD PARTICLES */
+
+        .particle {
+            position: absolute;
+
+            width: 2px;
+            height: 2px;
+
+            border-radius: 50%;
+
+            background: rgba(255, 210, 120, 0.7);
+
+            box-shadow:
+                0 0 5px rgba(255, 210, 120, 0.6);
+
+            animation:
+                particleFloat linear infinite;
+        }
+
+        @keyframes particleFloat {
+
+            0% {
+                transform:
+                    translateY(0)
+                    translateX(0);
+
+                opacity: 0;
+            }
+
+            15% {
+                opacity: 0.7;
+            }
+
+            50% {
+                transform:
+                    translateY(-30px)
+                    translateX(10px);
+            }
+
+            100% {
+                transform:
+                    translateY(-100vh)
+                    translateX(-20px);
+
+                opacity: 0;
+            }
+        }
+
+        /* FLOATING KRUSHNA */
+
+        .krushna {
+            position: absolute;
+
+            color: rgba(255, 235, 250, 0.55);
+
+            font-weight: 500;
+
+            white-space: nowrap;
+
+            user-select: none;
+            pointer-events: none;
+
+            text-shadow:
+                0 0 5px rgba(220, 150, 255, 0.25),
+                0 0 10px rgba(255, 210, 120, 0.12);
+
+            animation:
+                floatUp linear infinite;
+        }
+
+        /* FLOAT UP */
+
+        @keyframes floatUp {
+
+            0% {
+                transform:
+                    translateY(0)
+                    translateX(0);
+
+                opacity: 0;
+            }
+
+            10% {
+                opacity: 0.7;
+            }
+
+            50% {
+                transform:
+                    translateY(-50vh)
+                    translateX(10px);
+            }
+
+            100% {
+                transform:
+                    translateY(-120vh)
+                    translateX(-15px);
+
+                opacity: 0;
+            }
+        }
+
+        /* HEART OUTLINE */
+
+        .heart-word {
+            position: absolute;
+
+            color: rgba(248, 235, 255, 0.42);
+
+            font-weight: 500;
+
+            white-space: nowrap;
+
+            user-select: none;
+            pointer-events: none;
+
+            text-shadow:
+                0 0 6px rgba(180, 120, 255, 0.12),
+                0 0 10px rgba(255, 210, 120, 0.08);
+
+            animation:
+                heartPulse 6s ease-in-out infinite;
+        }
+
+        /* HEART PULSE */
+
+        @keyframes heartPulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.38;
+            }
+
+            50% {
+                transform: scale(1.03);
+                opacity: 0.55;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="scene">
+
+        <div class="nebula"></div>
+
+        <div class="fog"></div>
+
+    </div>
+
+
+    <script>
+
+        const scene =
+            document.querySelector(".scene");
+
+
+        /* =========================
+           STARS
+        ========================= */
+
+        for (let i = 0; i < 280; i++) {
+
+            const star =
+                document.createElement("div");
+
+            star.classList.add("star");
+
+
+            const size =
+                Math.random() * 2 + 0.5;
+
+
+            star.style.width =
+                size + "px";
+
+            star.style.height =
+                size + "px";
+
+
+            star.style.left =
+                Math.random() * 100 + "vw";
+
+            star.style.top =
+                Math.random() * 100 + "vh";
+
+
+            star.style.animationDuration =
+                (Math.random() * 5 + 3) + "s";
+
+
+            star.style.animationDelay =
+                Math.random() * 5 + "s";
+
+
+            scene.appendChild(star);
+        }
+
+
+        /* =========================
+           GOLD PARTICLES
+        ========================= */
+
+        for (let i = 0; i < 90; i++) {
+
+            const particle =
+                document.createElement("div");
+
+
+            particle.classList.add("particle");
+
+
+            particle.style.left =
+                Math.random() * 100 + "vw";
+
+
+            particle.style.top =
+                Math.random() * 100 + "vh";
+
+
+            particle.style.animationDuration =
+                (Math.random() * 18 + 14) + "s";
+
+
+            particle.style.animationDelay =
+                Math.random() * 10 + "s";
+
+
+            scene.appendChild(particle);
+        }
+
+
+        /* =========================
+           FLOATING KRUSHNA
+        ========================= */
+
+        for (let i = 0; i < 180; i++) {
+
+            const text =
+                document.createElement("div");
+
+
+            text.classList.add("krushna");
+
+
+            /* MARATHI TEXT */
+
+            text.innerHTML = "कृष्ण";
+
+
+            text.style.fontSize =
+                (Math.random() * 18 + 12) + "px";
+
+
+            text.style.left =
+                Math.random() * 100 + "vw";
+
+
+            text.style.bottom =
+                "-120px";
+
+
+            text.style.opacity =
+                Math.random() * 0.5 + 0.2;
+
+
+            text.style.animationDuration =
+                (Math.random() * 24 + 16) + "s";
+
+
+            text.style.animationDelay =
+                Math.random() * 20 + "s";
+
+
+            scene.appendChild(text);
+        }
+
+
+        /* =========================
+           HEART OUTLINE
+        ========================= */
+
+        const total = 95;
+
+
+        for (let i = 0; i < total; i++) {
+
+            const t =
+                (Math.PI * 2 * i) / total;
+
+
+            /* HEART EQUATION */
+
+            const x =
+                16 * Math.pow(
+                    Math.sin(t),
+                    3
+                );
+
+
+            const y =
+                13 * Math.cos(t)
+                - 5 * Math.cos(2 * t)
+                - 2 * Math.cos(3 * t)
+                - Math.cos(4 * t);
+
+
+            const word =
+                document.createElement("div");
+
+
+            word.classList.add(
+                "heart-word"
+            );
+
+
+            /* MARATHI TEXT */
+
+            word.innerHTML = "कृष्ण";
+
+
+            /* HEART SIZE */
+
+            const scale = 18;
+
+
+            const posX =
+                window.innerWidth / 2 +
+                x * scale;
+
+
+            const posY =
+                window.innerHeight / 2 -
+                y * scale;
+
+
+            word.style.left =
+                posX + "px";
+
+
+            word.style.top =
+                posY + "px";
+
+
+            word.style.fontSize =
+                (Math.random() * 4 + 14) + "px";
+
+
+            word.style.animationDelay =
+                Math.random() * 5 + "s";
+
+
+            scene.appendChild(word);
+        }
+
+    </script>
+
+</body>
+
+</html>

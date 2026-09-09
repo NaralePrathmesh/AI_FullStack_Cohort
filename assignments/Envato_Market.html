@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            height: 70px;
+            width: 100%;
+            display: flex;
+            background-color: rgb(0, 0, 0);
+        }
+
+        .header1 {
+            height: 100%;
+            width: 50%;
+            display: flex;
+
+        }
+
+        .header2 {
+            height: 100%;
+            width: 50%;
+            display: flex;
+        }
+
+        .header1 h1 {
+            font-size: 28px;
+            margin-left: 20px;
+            margin-top: 18px;
+            color: white;
+        }
+
+        .header1 span {
+            font-size: 18px;
+            margin-top: 20px;
+            color: white;
+        }
+
+        .btn1 {
+            height: 34px;
+            width: 150px;
+            color: black;
+            position: absolute;
+            top: 27px;
+            right: 10px;
+            color: white;
+            border-radius: 10px;
+            background-color: #82B440;
+        }
+
+
+        .container {
+            height: 100px;
+            width: 100%;
+            display: flex;
+        }
+
+        .nav1 {
+            height: 100%;
+            width: 20%;
+            background-color: white;
+        }
+
+        .nav2 {
+            height: 100%;
+            width: 60%;
+            background-color: white;
+        }
+
+        .nav3 {
+            height: 100%;
+            width: 20%;
+            background-color: white;
+        }
+
+        .nav1 img {
+            height: 100%;
+            width: 50%;
+            position: relative;
+            left: 120px;
+        }
+
+        .lists {
+
+            position: relative;
+            top: 35px;
+        }
+
+        .list1 {
+            display: inline;
+            margin-left: 90px;
+            font-size: 20px;
+            color: black;
+        }
+
+        .list1:hover{
+            color: red;
+            text-decoration: underline;
+        }
+
+
+        .btn2 {
+            height: 35px;
+            width: 90px;
+            position: relative;
+            top: 30px;
+            left: 130px;
+            border-radius: 10px;
+            border: none;
+            background-color: red;
+        }
+
+        .btn2:hover{
+            background-color: blue;
+        }
+
+        .container2 {
+            height: 600px;
+            width: 100%;
+        }
+
+        .img {
+            height: 100%;
+            width: 100%;
+            display: flex;
+        }
+
+        .container3 {
+            height: 600px;
+            width: 100%;
+            display: flex;
+            margin-top: 40px;
+        }
+
+
+        .container3_1 {
+            height: 100%;
+            width: 50%;
+        }
+
+        .container3_2 {
+            height: 100%;
+            width: 50%;
+        }
+
+        .img2 {
+            height: 100%;
+            width: 100%;
+        }
+
+        .container3_2 h3 {
+            color: red;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+
+        .container3_2 h1 {
+            margin-left: 20px;
+            margin-top: 20px;
+            font-size: 40px;
+        }
+
+        .container3_2 p {
+            margin-left: 20px;
+            margin-top: 20px;
+            font-size: 19px;
+        }
+
+        .container3_2 ul {
+            margin-top: 20px;
+            font-size: 17px;
+            list-style-type: none;
+            margin-left: 20px;
+        }
+
+        .btn3 {
+            margin-left: 20px;
+            margin-top: 20px;
+            height: 35px;
+            width: 90px;
+            border-radius: 5px;
+            border: none;
+            background-color: red;
+        }
+
+        .btn3:hover {
+            background-color: blue;
+        }
+
+
+        .container4 {
+            height: 600px;
+            width: 100%;
+            display: flex;
+            margin-top: 40px;
+        }
+
+        .container4_1 {
+            height: 100%;
+            width: 50%;
+        }
+
+        .container4_2 {
+            height: 100%;
+            width: 50%;
+        }
+
+        .container4_1 h3 {
+            position: relative;
+            top: 180px;
+            left: 100px;
+            color: blue;
+        }
+
+        .container4_1 h1 {
+            position: relative;
+            top: 200px;
+            left: 100px;
+            color: black;
+        }
+
+        .container4_1 h4 {
+            position: relative;
+            top: 220px;
+            left: 100px;
+            color: black;
+        }
+
+        .btn4 {
+            position: relative;
+            top: 240px;
+            left: 100px;
+            height: 40px;
+            width: 240px;
+            color: white;
+            font-weight: bolder;
+            background-color: red;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .btn4:hover {
+            background-color: blue;
+        }
+
+        .box1 {
+            height: 270px;
+            width: 300px;
+            background-color: #F3F5F9;
+            position: relative;
+            border-radius: 5px;
+            top: 10px;
+            left: 30px;
+        }
+
+        .box2 {
+            height: 270px;
+            width: 300px;
+            border-radius: 5px;
+            background-color: #F3F5F9;
+            position: relative;
+            left: 430px;
+            bottom: 260px;
+        }
+
+        .box3 {
+            height: 270px;
+            width: 300px;
+            border-radius: 5px;
+            background-color: #F3F5F9;
+            position: relative;
+            bottom: 220px;
+            left: 30px
+        }
+
+        .box4 {
+            height: 270px;
+            width: 300px;
+            border-radius: 5px;
+            background-color: #F3F5F9;
+            position: relative;
+            bottom: 490px;
+            left: 430px;
+        }
+
+        .box1 i {
+            position: relative;
+            top: 30px;
+            left: 110px;
+            font-size: 60px;
+            color: red;
+        }
+
+        .box1 h2 {
+            position: relative;
+            top: 40px;
+            left: 50px;
+        }
+
+        .box1 p {
+            position: relative;
+            top: 50px;
+            left: 70px;
+            color: gray;
+        }
+
+
+        .box2 i {
+            position: relative;
+            top: 30px;
+            left: 110px;
+            font-size: 60px;
+            color: red;
+        }
+
+        .box2 h2 {
+            position: relative;
+            top: 40px;
+            left: 50px;
+        }
+
+        .box2 p {
+            position: relative;
+            top: 50px;
+            left: 70px;
+            color: gray;
+        }
+
+        .box3 i {
+            position: relative;
+            top: 30px;
+            left: 110px;
+            font-size: 60px;
+            color: red;
+        }
+
+        .box3 h2 {
+            position: relative;
+            top: 40px;
+            left: 50px;
+        }
+
+        .box3 p {
+            position: relative;
+            top: 50px;
+            left: 70px;
+            color: gray;
+        }
+
+
+
+
+        .box4 i {
+            position: relative;
+            top: 30px;
+            left: 110px;
+            font-size: 60px;
+            color: red;
+        }
+
+        .box4 h2 {
+            position: relative;
+            top: 40px;
+            left: 50px;
+        }
+
+        .box4 p {
+            position: relative;
+            top: 50px;
+            left: 70px;
+            color: gray;
+        }
+
+
+        .Demos{
+            height: 50px;
+            width: 50px;
+            border-radius: 3px;
+            background-color: whitesmoke;
+            color: gray;
+            position: fixed;
+            bottom: 320px;
+            right: 20px;
+            font-size: 30px;
+        }
+
+        .cart{
+            height: 50px;
+            width: 50px;
+            border-radius: 3px;
+            background-color: whitesmoke;
+            color: gray;
+            position: fixed;
+            bottom: 250px;
+            right: 20px;
+            font-size: 30px;
+        }
+
+        .Demos i{
+            margin-top: 10px;
+            margin-left: 8px;
+        }
+
+        .cart i{
+            margin-top: 10px;
+            margin-left: 8px;
+        }
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <div class="header1">
+                <h1>envato<span> market</span></h1>
+            </div>
+            <div class="header2">
+                <i style="margin-left: 540px;margin-top:30px;color:red" class="fa-solid fa-magnifying-glass"></i>
+                <button class="btn1">Buy Now</button>
+            </div>
+        </header>
+
+
+        <nav class="container">
+            <div class="nav1">
+                <img src="../assets/Envato1.webp" alt="">
+            </div>
+            <div class="nav2">
+                <ul class="lists">
+                    <a style="text-decoration: none;color:black" href="">
+                        <li class="list1">Home</li>
+                    </a>
+                    <a style="text-decoration: none;color:black" href="">
+                        <li class="list1">Courses</li>
+                    </a>
+                    <a style="text-decoration: none;color:black" href="">
+                        <li class="list1">Pages</li>
+                    </a>
+                    <a style="text-decoration: none;color:black" href="">
+                        <li class="list1">Shop</li>
+                    </a>
+                    <a style="text-decoration: none;color:black" href="">
+                        <li class="list1">Blog</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="nav3">
+                <!-- <i class="fab fa-whatsapp"></i> -->
+                <button class="btn2">Login</button>
+            </div>
+        </nav>
+
+
+        <section class="container2">
+
+            <img class="img" src="../assets/Epsilon1.jpg" alt="">
+
+        </section>
+
+
+        <section class="container3">
+            <div class="container3_1">
+                <img class="img2" src="../assets/Envato3.webp" alt="">
+            </div>
+            <div class="container3_2">
+                <h3>ABOUT US</h3>
+                <h1>Where Knowledge Meets <br> Application</h1>
+                <p>At Epsilon, we believe meaningful education comes from applying theory to <br> practice.</p>
+                <p>Our mission is to bridge academic rigor with practical relevance — guided by <br> expert faculty,
+                    research-backed curriculum, and global learning standards.</p>
+                <ul>
+                    <li> ✅Accredited Online Programs</li>
+                    <li> ✅Expert Faculty & Mentors</li>
+                    <li> ✅Career & Research Development</li>
+                    <li> ✅Project-Based Learning</li>
+                </ul>
+
+                <button class="btn3">Apply Now</button>
+            </div>
+        </section>
+
+
+
+        <section class="container4">
+            <div class="container4_1">
+                <h3>WHY CHOOSE US</h3>
+                <h1>What Makes Epsilon Different</h1>
+                <h4>Our approach combines academic excellence with personalized mentorship — <br> ensuring each learner
+                    gains both intellectual depth and professional readiness.</h4>
+                <button class="btn4">Discover Our Learning Approach</button>
+            </div>
+            <div class="container4_2">
+                <div class="box1">
+                    <i class="fa fa-graduation-cap"></i>
+                    <h2>Epsilon Credibility</h2>
+                    <p>Programs developed by <br> certified institutions and <br> recognized educators.</p>
+                </div>
+                <div class="box2">
+                    <i class="fa-solid fa-book-open"></i>
+                    <h2>Applied Learning</h2>
+                    <p>Practical exercises, real-world <br> case studies, and guided <br> projects.</p>
+                </div>
+                <div class="box3">
+                    <br><i class="fa-solid fa-calendar-days"></i>
+                    <h2>Flexible Study Plans</h2>
+                    <p>Learn anywhere, anytime, with <br> full support and progress <br> tracking.</p>
+                </div>
+                <div class="box4">
+                    <i class="fa-solid fa-comments"></i>
+                    <h2>Global Community</h2>
+                    <p>Collaborate with peers and <br> mentors from over 30 <br> countries..</p>
+                </div>
+
+                <div class="Demos">
+                    <i class="fa-solid fa-display"></i>
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
