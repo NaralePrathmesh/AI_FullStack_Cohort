@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        let pin = Number(prompt("Enter Your Pin"));
+
+        const checkPin = (pin) => {
+            if (pin == "1234") {
+                console.log("Correct Pin")
+
+                let balance = 10000;
+                let amt = Number(prompt("Enter the Withdraw Amount:"))
+                if (balance >= amt) {
+                    balance = balance - amt;
+                    document.write("withdrawal amount is: " + amt);
+
+
+                    document.write("</br>Your Remaining Balance is: " + balance);
+                } else {
+                    document.write("Insufficient Balance");
+                }
+            }
+            else {
+                console.log("Wrong Pin")
+            }
+        }
+        checkPin(pin);
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

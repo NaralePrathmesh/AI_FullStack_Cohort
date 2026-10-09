@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <input type="number" id="JSMarks" placeholder="Enter JS Marks">
+    <input type="number" id="HtmlMarks" placeholder="Enter Html Marks">
+    <input type="number" id="CssMarks" placeholder="Enter Css Marks">
+    <input type="number" id="NodeMarks" placeholder="Enter Node Marks">
+
+    <button id="TotalMarks" onclick="TotalMarks(JSMarks,HtmlMarks,CssMarks,NodeMarks)">Total Marks</button>
+    <button id="Percentage" onclick="Percentage(JSMarks,HtmlMarks,CssMarks,NodeMarks)">Percentage</button>
+
+    <h1 id="display"></h1>
+    <h1 id="display1"></h1>
+
+
+
+
+
+    <script>
+
+
+        const TotalMarks=()=>{
+
+            let JSMarks=Number(document.getElementById("JSMarks").value)
+            let HtmlMarks=Number(document.getElementById("HtmlMarks").value)
+            let CssMarks=Number(document.getElementById("CssMarks").value)
+            let NodeMarks=Number(document.getElementById("NodeMarks").value)
+
+            let Total = JSMarks + HtmlMarks + CssMarks + NodeMarks;
+
+            document.getElementById("display").innerText="Total Marks are: "+ Total;
+        }
+
+
+        const Percentage=()=>{
+
+            let JSMarks=Number(document.getElementById("JSMarks").value)
+            let HtmlMarks=Number(document.getElementById("HtmlMarks").value)
+            let CssMarks=Number(document.getElementById("CssMarks").value)
+            let NodeMarks=Number(document.getElementById("NodeMarks").value)
+
+            let percentage = JSMarks + HtmlMarks + CssMarks + NodeMarks * 4 / 100;
+
+            document.getElementById("display1").innerText="Percentage are: "+ percentage;
+        }
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>

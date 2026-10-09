@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KM to Meter Converter</title>
+</head>
+
+<body>
+
+    <input type="number" id="convert" placeholder="Enter meters">
+    <button onclick="converter()">Convert</button>
+    <h3 id="result"></h3>
+
+    <script>
+
+        const converter = () => {
+
+            let m = Number(document.getElementById("convert").value);
+
+            let result = m / 1000;
+
+            document.getElementById("result").innerHTML =
+                m + " M = " + result + " KM";
+
+        }
+
+    </script>
+
+</body>
+</html>

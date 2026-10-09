@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+
+// Largest Number in an array
+
+
+        // let arr=[12,34,56,33,54,30]
+
+        // let largest=arr[0];
+
+        // for(let i=1;i<arr.length;i++)
+        // {
+        //     if(arr[i]>largest)
+        //     {
+        //         largest=arr[i]
+        //     }
+        // }
+        // console.log(largest);
+
+
+
+
+
+// Second Largest Number in an array
+
+        let arr = [10, 25, 7, 89, 45];
+
+        let largest = arr[0];
+        let second = arr[0];
+
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] > largest)
+            {
+                second = largest;
+                largest = arr[i];
+            }
+        }
+
+        console.log(second); // 45
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

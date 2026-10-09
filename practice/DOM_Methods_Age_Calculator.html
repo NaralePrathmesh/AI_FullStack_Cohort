@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+</head>
+
+<body>
+
+    <label>Enter your birth year:</label>
+    <input type="number" id="birthYear" placeholder="Enter birth year">
+    <button onclick="calculateAge()">Calculate Age</button>
+    <h3 id="result"></h3>
+
+    <script>
+
+        const calculateAge = () => {
+            let birthYear = Number(document.getElementById("birthYear").value);
+            let currentYear = 2026;
+            let age = currentYear - birthYear;
+            document.getElementById("result").innerHTML =
+                "Your age is " + age + " years";
+
+        }
+
+    </script>
+
+</body>
+
+</html>

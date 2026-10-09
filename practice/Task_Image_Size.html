@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Size Controller</title>
+</head>
+<body>
+
+    <h2>Image Size Controller</h2>
+
+    <input type="range" id="sizeRange" min="100" max="600" value="300">
+
+    <br><br>
+
+    <img src="../assets/Hyphen3.webp" id="myImage" width="300">
+
+    <script>
+        let range = document.getElementById("sizeRange");
+        let image = document.getElementById("myImage");
+
+        range.addEventListener("input", function () {
+            image.style.width = range.value + "px";
+        });
+    </script>
+
+</body>
+</html>

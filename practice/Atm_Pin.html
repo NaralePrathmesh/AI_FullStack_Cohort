@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- Create a JavaScript program using a loop + function.
+
+    Requirements:
+    Correct PIN = 1234
+    User gets 3 attempts
+    Ask the PIN using prompt()
+
+    If PIN is correct:
+    Correct PIN
+    Login Successful
+
+    Stop asking for the PIN.
+    If PIN is wrong:
+
+    Incorrect PIN
+    After 3 incorrect attempts:
+    Your Card is Blocked -->
+
+
+
+    <script>
+
+        let pin = Number(prompt("Enter Your Pin"));
+
+        const checkPin =(pin)=> {
+            if (pin == "1234") {
+                document.write("Correct Pin");
+            }
+            else {
+                document.write("Incorrect Pin try again");
+                checkPin(pin);
+                }
+            }
+        checkPin(pin);
+
+
+    </script>
+
+
+
+</body>
+
+</html>

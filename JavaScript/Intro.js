@@ -44,3 +44,12 @@
     // client side security issue
     // single threaded
     // debugging can become difficult in large applications
+
+
+//         Java	                                                                   JavaScript
+// Programming language	                                                Scripting language
+// Mainly used for backend, Android, enterprise apps	                Mainly used for web development
+// Runs on JVM (Java Virtual Machine)	                                Runs mainly in browser or Node.js
+// Statically typed	                                                    Dynamically typed
+// Code is usually compiled before execution	                        Usually executed by a JavaScript engine
+// File extension: .java	                                            File extension: .js

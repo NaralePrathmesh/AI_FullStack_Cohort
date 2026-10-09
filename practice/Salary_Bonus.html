@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- Take from the user:
+
+    Employee name
+    Basic salary
+
+    Calculate bonus based on salary:
+
+    Salary >= 50,000 → 20% bonus
+    Salary >= 30,000 → 10% bonus
+    Salary < 30,000 → 5% bonus -->
+
+
+    <script>
+
+
+        let name = prompt("Enter your name");
+        let salary = Number(prompt("Enter Your Salary"));
+        let bonus = 0;
+
+        const calculateSalary = (name, salary) => {
+
+            if (salary >= 50000) {
+                bonus = salary * 20 / 100;
+            }
+            else if (salary >= 30000) {
+                bonus = salary * 10 / 100;
+            }
+            else {
+                bonus = salary * 5 / 100;
+            }
+
+            let final_salary = salary + bonus;
+
+            document.write(name + " Your Final Salary is: " + final_salary);
+        };
+
+        calculateSalary(name, salary);
+    </script>
+
+
+
+
+</body>
+
+</html>

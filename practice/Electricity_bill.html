@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- 1. Electricity Bill Calculator
+
+    Create a program that:
+
+    Takes customer name and units consumed.
+    If units ≤ 100 → ₹5/unit
+    101–200 → ₹7/unit
+    Above 200 → ₹10/unit
+    Display customer name and total bill.
+    Use a function. -->
+
+
+    <script>
+
+        let name=prompt("Enter Name")
+        let units=Number(prompt("Enter Unit"))
+        let bill=0;
+
+        const Electricity_bill=(name,units)=>{
+            if(units<=100){
+                bill=units*5;
+                document.write(`Name: ${name} and bill is: ${bill}`)
+            }
+            else if(units>=101 && units<=200){
+                bill=units*7;
+                document.write(`Name: ${name} and bill is: ${bill}`)
+            }
+            else if(units>200){
+                bill=units*10;
+                document.write(`Name: ${name} and bill is: ${bill}`)
+            }
+        }
+        Electricity_bill(name,units);
+
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

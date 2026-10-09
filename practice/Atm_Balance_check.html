@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <!-- 6. ATM Balance Check
+
+    Create a program that:
+
+    Takes PIN.
+    If PIN is correct, show balance.
+    Ask whether the user wants to withdraw.
+    Check balance before withdrawal.
+    Display remaining balance. -->
+
+
+    <script>
+
+
+        let pin=Number(prompt("Enter Your Pin"));
+        let balance=10000;
+
+        const checkPin=(pin)=>{
+            if(pin=="1234"){
+                document.write("Correct Pin and your balance is" + balance);
+
+                let withdrawal=prompt("<br>You wants to withdraw money (yes/no)")
+                if(withdrawal=="yes")
+                {
+                    let withdraw_amt=Number(prompt("<br>Enter Your withdraw amount"));
+                    document.writeln("<br> Your withdraw amount is "+ withdraw_amt);
+
+                    let remaining_amt=balance-withdraw_amt;
+                    document.write("<br>Your remaining amount is: " + remaining_amt)
+                }
+                else if(withdrawal=="no"){
+                    document.write("Thank You...!")
+                }
+            }
+            else{
+                document.write("Incorrect pin")
+            }
+        }
+        checkPin(pin)
+
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

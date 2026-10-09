@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <!-- Calculator -->
+    <button id="add" onclick="Addition(a,b)">Addition</button>
+    <button id="add" onclick="Substraction(a,b)">Substraction</button>
+    <button id="add" onclick="Multiplication(a,b)">Multiplication</button>
+    <button id="add" onclick="Division(a,b)">Division</button>
+
+
+
+<!-- task 1
+    buttons - addition , substraction , division , multiplication
+    3 inputs - No1 ,  No2  , answer
+
+
+
+task 2
+    buttons- add balance , check balance ,withdraw ,checkdeposite
+    3 fields - enter deposit amt , enter withdraw amt , current balance -->
+
+
+    <script>
+
+        let a=Number(prompt("Enter First Number"));
+        let b=Number(prompt("Enter Second Number"));
+
+
+
+
+
+
+        const Addition=(a,b)=>{
+            document.write(`First Number ${a} <br> Second Number ${b} <br>`);
+            document.write("Addition is: ",a+b)
+        }
+
+        const Substraction=(a,b)=>{
+            document.write(`First Number ${a} <br> Second Number ${b} <br>`);
+            document.write("Substraction is: ",a-b);
+        }
+
+        const Multiplication=(a,b)=>{
+            document.write(`First Number ${a} <br> Second Number ${b} <br>`);
+            document.write("Multiplication is: ",a*b );
+        }
+
+        const Division=(a,b)=>{
+            document.write(`First Number ${a} <br> Second Number ${b} <br>`);
+            document.write("Division is: ",a/b);
+        }
+
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>
