@@ -25,9 +25,6 @@ root.render(
 
 
 
-
-
-
 // Components -:
     // Building block of react app
     // helps to build single page application

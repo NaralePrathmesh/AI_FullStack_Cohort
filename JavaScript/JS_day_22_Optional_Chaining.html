@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        // optional chaining indicate by ?
+        // used tro avoid error while accessing object values
+
+        // problem
+        const user={
+            name:"Prathmesh",
+        }
+        console.log(user.name)
+
+        // console.log(user.city.address)      throws an error because in nested object if any value is not present
+        // so to avoid this error we used optional chaining
+
+        console.log(user.city?.address)
+
+    </script>
+
+
+</body>
+</html>

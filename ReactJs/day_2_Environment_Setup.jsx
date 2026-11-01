@@ -9,7 +9,7 @@
     // npm install package name - install package
     // npm uninstall package name - install package
     // application start / run dev - run application
-    // npm run build create production build
+    // npm run - build create production build
 
 // NPM like other package manager - pnpm
 

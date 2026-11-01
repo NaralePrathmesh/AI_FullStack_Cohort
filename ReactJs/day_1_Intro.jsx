@@ -8,9 +8,10 @@
 // JSX - Extensible of JS (write HTML + JS file in one file)
 
 // Angular VS React -
-    // Angular - by google 2016 JS framework
-    // React - bt meta 2011 JS library
-
+           // React                                    Angular
+    // develop by meta 2011                       develop by google 2016
+    // JS library                                 JS framework
+    // One way Binding                            Two way Binding
 
 // Features of React -
     // Virtual DOM - Faster than real DOM

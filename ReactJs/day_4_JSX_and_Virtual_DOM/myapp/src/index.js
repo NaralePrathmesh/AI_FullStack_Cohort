@@ -13,7 +13,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
 
-  
+
   <React.StrictMode>
       <h1>Welcome To Modern JSX code</h1>
 
@@ -79,6 +79,7 @@ root.render(
 //-------------------------------------------------------------------------------------------------------------------------------
 
     // Virtual Dom -: A lightweight representation / copy of Actual DOM
+    // Reconciliation - The process react uses to update DOM efficiently
     // Stored in browser memory
     // React updates the virtual DOM first -> then updates only the changed part in Real DOM
     // Make react app faster
